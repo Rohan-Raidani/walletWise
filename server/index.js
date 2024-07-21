@@ -1,9 +1,10 @@
-const express = require('express');
-const cors = require('cors');
-const port = process.env.port || 8000;
-
 const dotenv = require('dotenv')
 dotenv.config()
+const express = require('express');
+const cors = require('cors');
+const port = process.env.PORT;
+// console.log(port)
+
 
 
 const db = require('./config/mongoose')
