@@ -1,0 +1,80 @@
+:root {
+    --back-dark: #424242;
+    --back-light: #616161;
+    --text-o: #FF5722;
+    --text-g: #E0E0E0;
+  }
+  
+  /* Custom scrollbar styles */
+  .table-container::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .table-container::-webkit-scrollbar-track {
+    background: var(--back-dark);
+  }
+  
+  .table-container::-webkit-scrollbar-thumb {
+    background-color: var(--text-o);
+    border-radius: 10px;
+    border: 3px solid var(--back-dark);
+  }
+  
+  .table-container::-webkit-scrollbar-thumb:hover {
+    background-color: #E64A19;
+  }
+
+  @media (max-height: 760px) {
+    .main .left .card{
+      padding: 8px 10px ;
+    }
+    .main .left .card h1{
+      font-size: 30px;
+    }
+    .main .left .card .total-amount{
+      margin-bottom: 0;
+      padding-top:5px;
+      padding-bottom:5px;
+    }
+    .main .left .card .recent{
+      margin-bottom: 0;
+    }
+  }  
+  @media (max-width:930px){
+    .main{
+      flex-direction: column;
+      gap: 20px;
+    }
+    .main .left, .right{
+      width: 100%;
+    }
+  }
+  @media (max-width:500px){
+    .main{
+      flex-direction: column;
+      gap: 20px;
+    }
+    .main .left, .right{
+      width: 100%;
+    }
+    .main .left .table-container{
+      width: 90%;
+    }
+  }
+  @media (max-width:400px){
+    .main{
+      flex-direction: column;
+      gap: 20px;
+    }
+    .main .left, .right{
+      width: 100%;
+    }
+    .main .left .table-container{
+      width: 90%;
+    }
+    .main .left .form{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }

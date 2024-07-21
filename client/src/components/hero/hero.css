@@ -1,0 +1,72 @@
+:root{
+    --back-dark:#424242;
+    --back-light:#616161;
+    --text-o:#FF5722;
+    --text-g:#E0E0E0;
+}
+.svg{
+   fill: var(--text-o);
+}
+/* Media Queries for Responsiveness */
+
+/* height */
+
+@media (max-height: 760px) {
+    .svg svg{
+        height: 35rem;
+    }
+  }
+
+@media (max-height: 450px) {
+    .svg svg{
+        height: 18rem;
+    }
+  }
+
+
+
+/* width */
+
+@media (max-width: 1235px) {
+    .svg svg{
+        height: 35rem;
+        width: 35rem;
+    }
+  }
+@media (max-width: 1105px) {
+    .svg svg{
+        height: 30rem;
+        width: 30rem;
+    }
+    .hero .content h1{
+        font-size: 4rem;
+    }
+  }
+@media (max-width: 870px) {
+    .svg svg{
+        height: 25rem;
+        width: 25rem;
+    }
+    .hero .content h1{
+        font-size: 3rem;
+    }
+  }
+@media (max-width: 720px) {
+    .svg svg{
+        height: 20rem;
+        width: 20rem;
+    }
+    .hero .content h1{
+        font-size: 2rem;
+    }
+  }
+@media (max-width: 560px) {
+    .hero{
+        flex-direction: column;
+        gap: 10px;
+        padding: 5rem 0;
+    }
+  }
+
+
+  
